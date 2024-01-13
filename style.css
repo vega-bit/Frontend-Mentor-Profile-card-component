@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+}
+
+body .bg-pattern-top {
+  position: absolute;
+  width: 978px;
+  height: 978px;
+  top: -489px;
+  left: -90px;
+}
+
+body .bg-pattern-bottom {
+  position: absolute;
+  width: 978px;
+  height: 978px;
+  top: 389px;
+  left: 870px;
+}
+
+.main {
+  margin-top: 200px;
+  display: inline-block;
+  z-index: 10;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: White;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.19);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.card-body img {
+  border-radius: 50%;
+  position: absolute;
+  top: -80px;
+  border: 5px solid White;
+}
+
+.card-body h2 {
+  margin-top: 3rem;
+}
+
+.card-body h2 span {
+  ont-size: 1rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.card-footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+  text-align: center;
+}
+
+.card-footer ul li {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.card-footer ul li span {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: hsl(0, 0%, 59%);
+  padding-top: 0.3rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+  body .bg-pattern-top {
+    position: absolute;
+    width: 978px;
+    height: 978px;
+    top: -589px;
+    left: -730px;
+  }
+
+  body .bg-pattern-bottom {
+    position: absolute;
+    width: 978px;
+    height: 978px;
+    top: 350px;
+    left: 170px;
+  }
+}
